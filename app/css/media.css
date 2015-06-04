@@ -1,0 +1,119 @@
+@media screen and (max-width: 1150px) {
+    body {         min-width: 980px;    }
+    .all_content {
+        padding-left: 10px;
+    }
+    .social {
+        float: right;
+        display: inline-block;
+        margin: -4px 10px 0 0;
+    }
+}
+/* ПЛАНШЕТ */
+
+@media screen and (max-width: 780px) {
+    body {
+        min-width: 767px;
+        z-index: 1;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .all_content {
+        position: relative;
+        padding-left: 0;
+    }
+    .unchange_content {
+        width: 100%;
+        font-size: 1.3em;
+        /*position: absolute;
+        bottom: 20px;*/
+    }
+    .social {
+        margin-right: 120px;
+    }
+    #menu_active {
+        right: 44px;
+        top: 39px;
+        /*padding: 0 0 0 32px;*/
+    }
+    .site_nav {
+        position: absolute;
+        top: -20px;
+        left: 515px;
+        overflow: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .site_nav:before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: -40px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #3ba8c0;
+        overflow: hidden;
+        z-index: 2;
+    }
+    #hidden_menu {
+        display: none;
+    }
+    .name {
+        display: none;
+    }
+    .mail,
+    .phone,
+    .skype {
+        display: inline-block;
+        width: 257px;
+        float: left;
+    }
+    .skype {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .contacts {
+        position: absolute;
+        bottom: 20px;
+        margin-left: -43px;
+    }
+    .change_content {
+        width: 700px;
+        display: inline-block;
+        float: left;
+        margin-left: 10px;
+    }
+    .info_box {
+        margin: 0px 0px 30px 0px;
+        width: 700px;
+    }
+    .last_box {
+        margin-bottom: 60px;
+    }
+    .footer_content {
+        padding-top: 4.5%;
+        padding-left: 13.5%;
+    }
+    .footer_img_wrap {
+        display: none;
+    }
+    .footer_text {
+        padding-left: 12%;
+        word-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 390px) {}
+
+@media screen and (max-width: 320px) {
+    body {
+        min-width: 767px;
+        z-index: 1;
+    }
+    .social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        float: none;
+        display: inline-block;
+        margin: -4px 112px 0 0;
+    }
+}

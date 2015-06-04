@@ -1,0 +1,62 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+
+.sprite-fb_h {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -5px;
+}
+
+.sprite-gir {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.sprite-git_h {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -62px;
+}
+
+.sprite-tw {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -5px;
+}
+
+.sprite-tw_h {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -62px;
+}
+
+.sprite-vk {
+    width: 46px;
+    height: 47px;
+    background-position: -5px -119px;
+}
+
+.sprite-vk_h {
+    width: 46px;
+    height: 47px;
+    background-position: -61px -119px;
+}
+
+<i class="sprite sprite-fb"></i>
+<i class="sprite sprite-fb_h"></i>
+<i class="sprite sprite-gir"></i>
+<i class="sprite sprite-git_h"></i>
+<i class="sprite sprite-tw"></i>
+<i class="sprite sprite-tw_h"></i>
+<i class="sprite sprite-vk"></i>
+<i class="sprite sprite-vk_h"></i>

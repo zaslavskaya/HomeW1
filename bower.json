@@ -1,0 +1,10 @@
+{
+  "name": "dz",
+  "dependencies": {
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3"
+  },
+  "devDependencies": {
+    "livereload-js": "~2.2.1"
+  }
+}
