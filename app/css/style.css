@@ -24,7 +24,10 @@
 @font-face {
     font-family: 'firasans-book';
     src: url('../fonts/fira/firasans-book.eot');
-    src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'), url('../fonts/fira/firasans-book.woff') format('woff'), url('../fonts/fira/firasans-book.ttf') format('truetype'), url('../fonts/fira/firasans-book.svg#firasans-book') format('svg');
+    src: url('../fonts/fira/firasans-book.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/fira/firasans-book.woff') format('woff'), 
+     url('../fonts/fira/firasans-book.ttf') format('truetype'),
+      url('../fonts/fira/firasans-book.svg#firasans-book') format('svg');
     font-style: normal;
     font-weight: normal;
 }
@@ -53,6 +56,17 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'firasans-lightitalic';
+    src: url('../fonts/fira/firasans-lightitalic.eot');
+    src: url('../fonts/fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/fira/firasans-lightitalic.woff') format('woff'), 
+     url('../fonts/fira/firasans-lightitalic.ttf') format('truetype'),
+      url('../fonts/fira/firasans-lightitalic.svg#firasans-book') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html {
     height: 100%;
 }
@@ -65,12 +79,21 @@ body {
 }
 /* HEADER page TOP HEADER  */
 
+.header_wrap {
+	height: 100%;
+	min-width: 960px;
+	/*max-width: 960px;*/
+	margin: 0 auto;
+  
+}
+
 .top_header {
     background: #eff3f7 url(../img/line.jpg) bottom repeat-x;
     padding: 41px 0 12px 0;
     height: 70px;
     /* border-bottom: #e7eff3 1px insert;*/
 }
+
 /* LOGO logo */
 
 .logo {
@@ -94,7 +117,8 @@ body {
 .social {
     float: right;
     display: inline-block;
-    margin: -4px 112px 0 0;
+      margin: -3px 87px 0px -1px;
+      padding-left: 0px;
 }
 
 .social li {
@@ -182,7 +206,7 @@ body {
     /* width: 18%; */
     
     min-width: 250px;
-    margin-left: -8px;
+      margin-left: -2px;
     font-size: 1.3em;
 }
 /* site navigation*/
@@ -192,21 +216,24 @@ body {
     border-radius: 4px;
     list-style: none;
     color: #ccc;
+      padding: 0;
+      margin: 0;
 }
 
-.nav_line {
-    border-bottom: 2px solid #3ba8c0;
-}
 /* links colors*/
 
-.site_nav_pt {
-    padding: 7px;
-}
+
 
 .site_nav a {
-    color: #959aa8;
-    padding: 13px 0 9px 18px;
-    display: block;
+ border-top: 2px solid #3ba8c0 ;
+  color: #959aa8;
+    padding: 21px 0px 18px 19px;
+  margin: -2px 10px 0px 10px;
+  display: block;
+}
+.nav_line:first-child {
+   /*border-top: 2px solid #eff3f7 ;*/
+    border-top: hidden;
 }
 
 .site_nav a:hover {
@@ -218,17 +245,16 @@ body {
     text-decoration: none;
 }
 
-.nav-active {
+.site_nav_active {
     background-color: #3ba8c0;
-    border-radius: 3px 3px 0 0;
-}
+    }
 
-.nav-active a {
+.site_nav_active a {
     color: #fff;
     font-size: 1.2em;
 }
 
-.nav-active a:hover {
+.site_nav_active a:hover {
     color: #fff;
 }
 /*.nav_active {
@@ -243,7 +269,7 @@ body {
     overflow: hidden;
     text-decoration: none;
     list-style: none;
-    line-height: 39px;
+     line-height: 40px;
 }
 
 .contacts a {
@@ -342,7 +368,7 @@ body {
 .info_box {
     background-color: #eff3f7;
     border-radius: 5px;
-    margin: 0px 370px 38px 10px;
+      margin: 0px 370px 37px 16px;
     min-width: 650px;
     max-width: 750px;
 }
@@ -393,7 +419,7 @@ body {
 }
 
 .info_about_wrap {
-    padding: 20px;
+    padding: 20px 20px 41px 20px;
 }
 
 .info_about_point {
@@ -402,22 +428,25 @@ body {
 }
 
 .skills_wrap {
-    display: inline-block;
-    line-height: 20px;
-    font-size: 13px;
-    float: right;
-    width: 200px;
+      display: inline-block;
+    line-height: 18px;
+  font-size: 13px;
+  float: right;
+  width: 234px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.skills {
-    display: inline-block;
-    background-image: -webkit-linear-gradient( 90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 50%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
-    padding: 2px 12px;
-    border-radius: 3px;
-    color: #fff;
-    margin: 5px 4px 10px 2px;
-    font-family: 'proxima_semibold';
-    font-size: 14px;
+ 
+    .skills {
+  display: inline-block;
+  background-image: -webkit-linear-gradient( 90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 50%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+  padding: 0px 12px;
+  border-radius: 3px;
+  color: #fff;
+  margin: 11px 7px 0px 3px;
+  font-family: 'proxima_semibold';
+  font-size: 14px;
 }
 
 .no-rgba .skills {
@@ -532,6 +561,7 @@ body {
     height: auto!important;
     overflow: hidden;
 }
+
 
 .wrapper:after {
     content: "";

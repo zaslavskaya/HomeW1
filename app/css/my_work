@@ -1,0 +1,8 @@
+body {
+	margin: 100px;
+}
+.example_image {
+	 max-height: 125px;
+	 max-width: 177px;
+
+}
