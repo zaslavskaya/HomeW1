@@ -1,0 +1,12 @@
+.info_box_cotact_head {
+	  background-color: #48cbe8;
+  border-bottom: 18px #67dffa solid;
+  height: 119px;
+}
+.contact_name{
+	border-bottom: none;
+	color: #fff;
+	font-size: 1.7em;
+	  padding: 40px 0px 0px 59px;
+}
+
