@@ -563,8 +563,6 @@ body {
 .footer_content {
     width: 960px;
     margin: 0 auto;
-
-
    
 }
 
@@ -579,8 +577,6 @@ body {
     color: #4a545d
 }
 
-
-
 .footer_img_wrap {
     width: 20px;
     height: 32px;
@@ -588,12 +584,13 @@ body {
     display: inline-block;
     background: #eff3f7 url(../img/log.png) 0px -2px;
      margin: 5px 9px 7px 235px;
+     z-index: 9999;
+     overflow: visible;
 }
 .footer_img_wrap:hover {
 	 cursor: pointer;
 	 background: #eff3f7 url(../img/log.png) 0px -40px;
 }
-
 
 
 /*.footer_img_wrap:hover {

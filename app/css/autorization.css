@@ -1,0 +1,74 @@
+
+.autorizaton_block {
+	width: 590px;
+	height: 480px;
+	background: #eff3f7;
+    margin: 10% 30%;
+}
+
+.autoriz_name {
+	height: 50px;
+	width: 100;
+	background: #48cbe8;
+	border-bottom: 10px #67dffa solid;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.auto_form {
+
+}
+.auto_form form {
+  /* margin-top: 10px; */
+  padding: 15px 145px;
+  text-align: center;
+}
+.auto_form label {
+
+
+display: inline-block;
+ font-family: 'firasans-light', arial, sans-serif;
+ font-size: 2.05em;
+color: #48cbe8;
+display: block;
+vertical-align:top;
+
+
+}
+.auto_form input[type=text], .auto_form input[type=password] {
+	display: block;
+  margin-bottom: 10px;
+  padding: 0 3px;
+  width: 274px;
+  height: 30px;
+   font-family: 'firasans-book', arial, sans-serif;
+ font-size: 0.9em;
+ color: #48cbe8;
+  border: 1px solid #48cbe8;
+  border-radius: 2px;
+  line-height: 25px;
+}
+.auto_form  input[type=submit] {
+
+    
+  background-color: #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
+  position: relative;
+  cursor: pointer;
+behavior: url(PIE.htc);
+}
+.auto_form input[type=submit]:hover {
+color:#fff;
+}
+
+.auto_login {
+	width: 90%;
+	height: 100px;
+
+}
+
+.auto_pass{
+  width: 90%;
+  height: 100px;
+}
