@@ -25,13 +25,15 @@
 	
 }
 .message_down {
-	display: inline-block;
-	margin-top: 70px;
-	width: 100%;
+	  display: inline-block;
+  margin-top: 5px;
+  width: 100%;
+
 
 }
 .contact_form {
-	width: 500px;
+	  width: 412px;
+  padding: 21px 103px 13px;
  
 }
 .contact_form form {
@@ -47,14 +49,14 @@ color: #959aa8;
 display:inline-block;
 vertical-align:top;
 *display:inline;
-*zoom:1;
+
 }
 .contact_form input {
 	display: inline-block;
   margin-bottom: 10px;
   padding: 0 3px;
-  width: 274px;
-  height: 30px;
+   width: 184px;
+  height: 39px;
    font-family: 'firasans-book', arial, sans-serif;
  font-size: 0.9em;
  color: #48cbe8;
@@ -65,32 +67,40 @@ vertical-align:top;
 
 .contact_form input[type=submit] {
  
-  display: inline-block;
-    color: #fff;
-    width: 150px;
+   display: inline-block;
+  color: #fff;
+  width: 150px;
   background-color: #48cbe8;
   border-bottom: 2px solid #3ba8c0;
+  font-size: 1.3em;
   position: relative;
   cursor: pointer;
-  behavior: url(PIE.htc);
+  
 }
 .contact_form input[type=textarea]{
 	padding-right: 20px;
     cols: 40;
     rows: 20;
 	height: 180px;
-	width: 100%;
+	  width: 377px;
 }
 
 .submit_buttons {
 	margin: 20px auto;
 	text-align: center;
 }
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
 
 .contact_form input[type=submit]:hover {
    color:#ccc;
 }
 
-
-
- 
+.btn_left {
+	float: left;
+}
+.btn_right {
+	float: right;
+ }

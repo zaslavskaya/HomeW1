@@ -3,25 +3,27 @@
 	width: 590px;
 	height: 480px;
 	background: #eff3f7;
-    margin: 10% 30%;
+    margin: 15.5% 31.5%
 }
 
 .autoriz_name {
-	height: 50px;
-	width: 100;
-	background: #48cbe8;
-	border-bottom: 10px #67dffa solid;
-	color: #fff;
-	text-align: center;
-	font-size: 1.5em;
+	  height: 67px;
+  width: 100;
+  background: #48cbe8;
+  border-bottom: 15px #67dffa solid;
+  font-family: 'firasans-light', arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 17px 10px 10px 10px;
 }
 
 .auto_form {
 
 }
 .auto_form form {
-  /* margin-top: 10px; */
-  padding: 15px 145px;
+  margin-top: -32px; 
+     padding: 0px 83px;
   text-align: center;
 }
 .auto_form label {
@@ -30,45 +32,53 @@
 display: inline-block;
  font-family: 'firasans-light', arial, sans-serif;
  font-size: 2.05em;
-color: #48cbe8;
+color: #959aa8;
 display: block;
 vertical-align:top;
 
 
 }
 .auto_form input[type=text], .auto_form input[type=password] {
-	display: block;
-  margin-bottom: 10px;
+	  display: block;
+  margin-bottom: 17px;
   padding: 0 3px;
-  width: 274px;
-  height: 30px;
-   font-family: 'firasans-book', arial, sans-serif;
- font-size: 0.9em;
- color: #48cbe8;
+  width: 416px;
+  height: 62px;
+  font-family: 'firasans-book', arial, sans-serif;
+  font-size: 0.9em;
+  color: #48cbe8;
   border: 1px solid #48cbe8;
   border-radius: 2px;
   line-height: 25px;
 }
 .auto_form  input[type=submit] {
-
-    
   background-color: #48cbe8;
   border-bottom: 2px solid #3ba8c0;
+  border-radius: 2px;
+  font-size: 2.05em;
   position: relative;
   cursor: pointer;
-behavior: url(PIE.htc);
+  margin: 17px;
+  padding: 0px 65px 0px 65px;
 }
+
+
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+
 .auto_form input[type=submit]:hover {
 color:#fff;
 }
 
 .auto_login {
-	width: 90%;
-	height: 100px;
+	
+	
 
 }
 
 .auto_pass{
-  width: 90%;
-  height: 100px;
+  
+
 }

@@ -182,14 +182,14 @@ behavior: url(PIE.htc);
 }
 
 .popup h4{
-   padding-top: 11px;
-   background-color: #48cbe8;
-   border-bottom: 8px #67dffa solid;
-   font-family: 'firasans-book', arial, sans-serif;
-   font-size: 1.5em;
-   height: 40px;
-   margin: 0;
-   color: #fff;
+    padding-top: 6px;
+  background-color: #48cbe8;
+  border-bottom: 8px #67dffa solid;
+  font-family: 'firasans-book', arial, sans-serif;
+  font-size: 1.5em;
+  height: 40px;
+  margin: 0px;
+  color: #fff;
 
 }
 .popup a.close {
@@ -204,12 +204,13 @@ background:url(../img/close.png) no-repeat;
 }
 
 .reg_form {
-  margin-left: -200px;
-  width: 328px;
+  margin-left: -164px;
+  margin-top: 228px;
+  width: 360px;
 }
 .reg_form form {
-  margin-top: 10px;
-  padding: 10px 19px;
+   /* margin-top: 10px; */
+  padding: 9px 21px;
   text-align: left;
 }
 .reg_form label {
@@ -221,13 +222,14 @@ color: #959aa8;
 display:inline-block;
 vertical-align:top;
 *display:inline;
-*zoom:1;
+
 }
 .reg_form input[type=text] {
-  margin-bottom: 10px;
+	  margin-bottom: 10px;
   padding: 0 3px;
-  width: 274px;
-  height: 30px;
+  width: 311px;
+  height: 37px;
+
    font-family: 'firasans-book', arial, sans-serif;
  font-size: 0.9em;
  color: #48cbe8;
@@ -237,17 +239,33 @@ vertical-align:top;
 }
 
 .reg_form input[type=submit] {
-margin: 10px 10px 10px 88px;
+   margin: 10px 10px 10px 88px;
     
   background-color: #48cbe8;
   border-bottom: 2px solid #3ba8c0;
   position: relative;
   cursor: pointer;
-behavior: url(PIE.htc);
+
+}
+
+.reg_form input[type=textare] {
+   margin: 10px 10px 10px 88px;
+    width: 200px;
+    height: 100px;
+  background-color: #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
+  position: relative;
+  cursor: pointer;
+
 }
 .reg_form input[type=submit]:hover {
 color:#fff;
 }
+
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
 
 #overlay {
 width:100%;
