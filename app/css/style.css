@@ -77,6 +77,26 @@ body {
     height: 100%;
     min-width: 970px;
 }
+
+/*общие стили для кнопок*/
+.buttons {
+   padding: 3px 10px;
+   text-align: center;
+     border: 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'firasans-book', arial, sans-serif;
+  color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.titles_style {
+   color: #3ba8c0;
+    font-family: 'firasans-book' , arial, sans-serif;
+   
+}
+
 /* HEADER page TOP HEADER  */
 
 .header_wrap {
@@ -564,7 +584,7 @@ body {
 .footer_img_wrap {
     width: 20px;
     height: 32px;
-      
+
     display: inline-block;
     background: #eff3f7 url(../img/log.png) 0px -2px;
      margin: 5px 9px 7px 235px;

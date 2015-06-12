@@ -10,3 +10,87 @@
 	  padding: 40px 0px 0px 59px;
 }
 
+
+.name_mail_left {
+	display: inline-block;
+    float: left;
+    width: 200px;
+  
+}
+
+.name_mail_right{
+	display: inline-block;
+  float: right;
+   width: 200px;
+	
+}
+.message_down {
+	display: inline-block;
+	margin-top: 70px;
+	width: 100%;
+
+}
+.contact_form {
+	width: 500px;
+ 
+}
+.contact_form form {
+	width: 500px;
+ 
+}
+.contact_form label {
+
+height:26px;
+ font-family: 'firasans-book', arial, sans-serif;
+ font-size: 1.05em;
+color: #959aa8;
+display:inline-block;
+vertical-align:top;
+*display:inline;
+*zoom:1;
+}
+.contact_form input {
+	display: inline-block;
+  margin-bottom: 10px;
+  padding: 0 3px;
+  width: 274px;
+  height: 30px;
+   font-family: 'firasans-book', arial, sans-serif;
+ font-size: 0.9em;
+ color: #48cbe8;
+  border: 1px solid #48cbe8;
+  border-radius: 2px;
+  line-height: 25px;
+}
+
+.contact_form input[type=submit] {
+ 
+  display: inline-block;
+    color: #fff;
+    width: 150px;
+  background-color: #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
+  position: relative;
+  cursor: pointer;
+  behavior: url(PIE.htc);
+}
+.contact_form input[type=textarea]{
+	padding-right: 20px;
+    cols: 40;
+    rows: 20;
+	height: 180px;
+	width: 100%;
+}
+
+.submit_buttons {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.contact_form input[type=submit]:hover {
+   color:#ccc;
+}
+
+
+
+ 

@@ -14,12 +14,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- CSS CSS -->
-
     <link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -31,26 +29,26 @@
     <div class="wrapper" id="wrap">
         <!-- HEADER TOP -->
         <header class="top_header cf">
-           <div class="header_wrap">
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
-                <span class="logo_hidden">Сайт портфолио</span>
-            </div>
-            <!-- LOGO END -->
-            <!-- SOCIAL ICONS -->
-            <div class="socio_nav">
-                <div id="menu_active">
-                    <a href="#"></a>
+            <div class="header_wrap">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                    <span class="logo_hidden">Сайт портфолио</span>
                 </div>
-                <ul class="social cf">
-                    <li class="vk"><a href="https://vk.com/id3310169"><span class="social_hidden">vk</span></a></li>
-                    <li class="fb"><a href="https://www.facebook.com/moe.e.mail"><span class="social_hidden">fb</span></a></li>
-                    <li class="tw"><a href="#"><span class="social_hidden">tw</span></a></li>
-                    <li class="git"><a href="https://github.com/zaslavskaya"><span class="social_hidden">git</span></a></li>
-                </ul>
-            </div>
-            <!-- SOCIAL ICONS  END-->
+                <!-- LOGO END -->
+                <!-- SOCIAL ICONS -->
+                <div class="socio_nav">
+                    <div id="menu_active">
+                        <a href="#"></a>
+                    </div>
+                    <ul class="social cf">
+                        <li class="vk"><a href="https://vk.com/id3310169"><span class="social_hidden">vk</span></a></li>
+                        <li class="fb"><a href="https://www.facebook.com/moe.e.mail"><span class="social_hidden">fb</span></a></li>
+                        <li class="tw"><a href="#"><span class="social_hidden">tw</span></a></li>
+                        <li class="git"><a href="https://github.com/zaslavskaya"><span class="social_hidden">git</span></a></li>
+                    </ul>
+                </div>
+                <!-- SOCIAL ICONS  END-->
             </div>
         </header>
         <!-- HEADER TOP END -->
@@ -62,7 +60,7 @@
                 <ul class="site_nav" id="hidden_menu">
                     <li class="site_nav_pt first"><a class="nav_line" href="index.html">Обо мне</a></li>
                     <li class="site_nav_pt"><a class="nav_line" href="work_asya.html">Мои работы</a></li>
-                     <li class="site_nav_pt site_nav_active"><a  href="contact_asya.html">Связаться со мной</a></li>
+                    <li class="site_nav_pt site_nav_active"><a href="contact_asya.html">Связаться со мной</a></li>
                 </ul>
                 <!-- SITE NAVIGATION  END-->
                 <!-- CONTACTS -->
@@ -78,31 +76,51 @@
             <section class="change_content">
                 <!-- MAIN INFORMATION -->
                 <article class="info_box">
-                    <div class="info_box_cotact_head"> <h4 class="info_boxes_name contact_name">У вас интересный проект? Напишите мне!</h4></div>
+                    <div class="info_box_cotact_head">
+                        <h4 class="info_boxes_name contact_name titles_style">У вас интересный проект? Напишите мне!</h4></div>
                     <div class="cf info_about_wrap ">
-                                         
+
+                     <form class="contact_form cf">
+                         
+                         <div class="name_mail_left"> 
+                              <label for="resp_name">Имя:</label>
+                              <input  name="resp_name" type="mail" placeholder="как к вам обращаться"/> 
+                          </div> 
+
+                          <div  class="name_mail_right">
+                              <label for="e-mail">Email:</label>
+                              <input  name="e-mail" type="text" placeholder="куда мне писать"/>
+                          </div>
+
+
+                          <div class="message_down"> 
+                            <label for="call_back">Ваше сообщение:</label>
+                            <input  name="call_back textarea" type="textarea" placeholder="Кратко в чём суть"/>
+                          </div>
+                             
+                             <div class="submit_buttons"> 
+                              <input class="buttons" type="submit" value="Отправить" /> 
+                               <input class="buttons" type="submit" value="Очистить" /> 
+                            </div>
+
+                     </form>
+                       
                     </div>
                 </article>
                 <!-- MAIN INFORMATION END -->
-             
-              
             </section>
         </section>
         <!-- CONTENT all_content END-->
     </div>
-      <!--  FOOTER -->
-    
-            <div class="footer_img_wrap">
-                <a class="lock_image" href="work_asya.html"></a>
-            </div>
-
+    <!--  FOOTER -->
+    <div class="footer_img_wrap">
+        <a class="lock_image" href="work_asya.html"></a>
+    </div>
     <footer class="page_footer">
         <div class="footer_content cf">
-           
             <p class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте егоj.</p>
         </div>
     </footer>
-
     <!--  FOOTER END -->
     <script type="text/javascript">
     document.getElementById('menu_active').onclick = function() {
@@ -113,7 +131,6 @@
         mu.style.display = "block";
     };
     </script>
-
     <script type="text/javascript">
     </script>
 </body>

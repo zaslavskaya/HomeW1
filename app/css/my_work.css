@@ -155,7 +155,7 @@
   vertical-align: top;
   position: relative;
   text-decoration: none;
-  text-transform: uppercase;
+
   font-family: 'firasans-light', arial, sans-serif;
   font-size: 0.7em;
   color: #3ba8c0;
@@ -173,8 +173,6 @@
   left: 50%;
   display: none;
   overflow: hidden;
-
-  /* border: 1px solid #ccc; */
   background: #fff;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -241,18 +239,10 @@ vertical-align:top;
 
 .reg_form input[type=submit] {
 margin: 10px 10px 10px 88px;
-  padding: 3px 10px;
   
-  text-align: center;
-  /* background: #ccc; */
-  border: 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  font-family: 'firasans-book', arial, sans-serif;
-  color: #fff;
   
   background-color: #48cbe8;
+  border-bottom: 2px solid #3ba8c0;
   position: relative;
   cursor: pointer;
 behavior: url(PIE.htc);
@@ -271,3 +261,5 @@ display:none;
 background:#000;
 opacity:.8;
 }
+
+
