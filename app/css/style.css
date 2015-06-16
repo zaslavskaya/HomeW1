@@ -88,7 +88,7 @@ body {
   border-radius: 3px;
   font-family: 'firasans-book', arial, sans-serif;
   color: #fff;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #fff;
 }
 
 .titles_style {
@@ -568,8 +568,8 @@ body {
 
 .footer_text {
     display: inline-block;
-    margin: 0;
-      padding: 23px 250px;
+   margin: 27px 278px;
+  /* padding: 23px 250px; */
     font-family: 'firasans-light', arial, sans-serif;
     font-size: 14px;
     letter-spacing: 0px;
@@ -580,33 +580,36 @@ body {
 .footer_img_wrap {
     width: 20px;
     height: 32px;
-
+    margin: 26px 10px 10px 197px;
     display: inline-block;
     background: #eff3f7 url(../img/log.png) 0px -2px;
-     margin: 5px 9px 7px 235px;
-     z-index: 9999;
-     overflow: visible;
+
+      
 }
-.footer_img_wrap:hover {
+/*.footer_img_wrap:hover {
 	 cursor: pointer;
 	 background: #eff3f7 url(../img/log.png) 0px -40px;
+}*/
+
+.link_auto {
+	  font-size: 26px;
+     padding: 2px;
+     line-height: 30px;
+   
+     color: transparent;
 }
-
-
-/*.footer_img_wrap:hover {
+.footer_img_wrap:hover {
 	cursor: pointer;
 	background: #eff3f7 url(../img/log.png) 0px 34px;
 }
 
-/*.lock_image {
+.lock_image {
 	height: 30px;
 	width: 20px;
 	color: #fff;
 	z-index: 99999;
-
-
-}*/
-
+	text-decoration: none;
+}
 
 .wrapper {
     position: relative;

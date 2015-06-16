@@ -33,7 +33,7 @@
             <div class="header_wrap">
                 <!-- LOGO -->
                 <div class="logo">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                     <span class="logo_hidden">Сайт портфолио</span>
                 </div>
                 <!-- LOGO END -->
@@ -44,7 +44,7 @@
                     </div>
                     <ul class="social cf">
                         <li class="vk"><a href="https://vk.com/id3310169"><span class="social_hidden">vk</span></a></li>
-                        <li class="tw"><a href="autorization.html"><span class="social_hidden">tw</span></a></li>
+                        <li class="tw"><a href="https://twitter.com/it_Z_Asya"><span class="social_hidden">tw</span></a></li>
                         <li class="fb"><a href="https://www.facebook.com/moe.e.mail"><span class="social_hidden">fb</span></a></li>
                         <li class="git"><a href="https://github.com/zaslavskaya"><span class="social_hidden">git</span></a></li>
                     </ul>
@@ -177,7 +177,8 @@
       <!--  FOOTER -->
     
             <div class="footer_img_wrap">
-                  <a class="lock_image" href="autorization.html"></a>
+                  <a class="lock_image" href="autorization.html"><span class="link_auto">A</span></a>
+
             </div>
 
     <footer class="page_footer">
@@ -199,7 +200,7 @@
         return false;               
     }); 
     $('a.close').click(function () {
-        $(this).parent().fadeOut(100);
+        $(this).parent().slideToggle("slow");
         $('#overlay').remove('#overlay');
         return false;
     });

@@ -1,84 +1,88 @@
+/* для блока автоизации*/
 
 .autorizaton_block {
-	width: 590px;
-	height: 480px;
-	background: #eff3f7;
-    margin: 15.5% 31.5%
+    width: 590px;
+    height: 433px;
+    padding-bottom: 100px;
+    margin: 130px auto 130px auto;
+    background: #eff3f7;
 }
 
 .autoriz_name {
-	  height: 67px;
-  width: 100;
-  background: #48cbe8;
-  border-bottom: 15px #67dffa solid;
-  font-family: 'firasans-light', arial, sans-serif;
-  color: #fff;
-  text-align: center;
-  font-size: 2.5em;
-  padding: 17px 10px 10px 10px;
+    height: 67px;
+   
+    background: #48cbe8;
+    border-bottom: 15px #67dffa solid;
+    font-family: 'firasans-light', arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 17px 10px 10px 10px;
 }
-
+/*Настройки формы*/
 .auto_form {
-
+    background: #eff3f7;
 }
+
 .auto_form form {
-  margin-top: -32px; 
-     padding: 0px 83px;
-  text-align: center;
+    margin-top: -32px;
+    padding: 0px 83px;
+    text-align: center;
+
 }
+/*лейблы*/
 .auto_form label {
-
-
-display: inline-block;
- font-family: 'firasans-light', arial, sans-serif;
- font-size: 2.05em;
-color: #959aa8;
-display: block;
-vertical-align:top;
-
-
+    display: inline-block;
+    font-family: 'firasans-light', arial, sans-serif;
+    font-size: 2.05em;
+    color: #959aa8;
+    display: block;
+    vertical-align: top;
 }
-.auto_form input[type=text], .auto_form input[type=password] {
-	  display: block;
-  margin-bottom: 17px;
-  padding: 0 3px;
-  width: 416px;
-  height: 62px;
-  font-family: 'firasans-book', arial, sans-serif;
-  font-size: 0.9em;
-  color: #48cbe8;
-  border: 1px solid #48cbe8;
-  border-radius: 2px;
-  line-height: 25px;
+/* поля ввода*/
+.auto_form input[type=text],
+.auto_form input[type=password] {
+    display: block;
+    margin-bottom: 17px;
+    padding: 0px 17px;
+    width: 388px;
+    height: 62px;
+    font-family: 'firasans-book', arial, sans-serif;
+    font-size: 0.9em;
+    color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 2px;
+    line-height: 25px;
+   
 }
-.auto_form  input[type=submit] {
-  background-color: #48cbe8;
-  border-bottom: 2px solid #3ba8c0;
-  border-radius: 2px;
-  font-size: 2.05em;
-  position: relative;
-  cursor: pointer;
-  margin: 17px;
-  padding: 0px 65px 0px 65px;
+/*кнопка*/
+.auto_form input[type=submit] {
+    background-color: #48cbe8;
+    border-bottom: 2px solid #3ba8c0;
+    border-radius: 2px;
+    font-size: 2.05em;
+    position: relative;
+    cursor: pointer;
+    margin: 17px;
+    padding: 0px 65px 0px 65px;
 }
-
-
-::-webkit-input-placeholder {color:#48cbe8;}
-::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
-:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#48cbe8;}
-
-.auto_form input[type=submit]:hover {
-color:#fff;
+/* плейсхолдеры*/
+::-webkit-input-placeholder {
+    color: #48cbe8;
 }
 
-.auto_login {
-	
-	
+::-moz-placeholder {
+    color: #48cbe8;
+}
+/* Firefox 19+ */
 
+:-moz-placeholder {
+    color: #48cbe8;
+}
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #48cbe8;
 }
 
-.auto_pass{
-  
 
-}

@@ -1,106 +1,132 @@
+/*форма обратной связи*/
+
 .info_box_cotact_head {
-	  background-color: #48cbe8;
-  border-bottom: 18px #67dffa solid;
-  height: 119px;
-}
-.contact_name{
-	border-bottom: none;
-	color: #fff;
-	font-size: 1.7em;
-	  padding: 40px 0px 0px 59px;
+    background-color: #48cbe8;
+    border-bottom: 18px #67dffa solid;
+    height: 119px;
 }
 
+.contact_name {
+    border-bottom: none;
+    color: #fff;
+    font-size: 1.7em;
+    padding: 40px 0px 0px 59px;
+}
+/*имя*/
 
 .name_mail_left {
-	display: inline-block;
+    display: inline-block;
     float: left;
     width: 200px;
-  
 }
+/*почта*/
 
-.name_mail_right{
-	display: inline-block;
-  float: right;
-   width: 200px;
-	
+.name_mail_right {
+    display: inline-block;
+    float: right;
+    width: 200px;
 }
+/*поле : введите сообщение*/
+
 .message_down {
-	  display: inline-block;
-  margin-top: 5px;
-  width: 100%;
-
-
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
 }
+/*настройки формы*/
+
 .contact_form {
-	  width: 412px;
-  padding: 21px 103px 13px;
- 
+    width: 412px;
+    padding: 21px 103px 13px;
 }
+
 .contact_form form {
-	width: 500px;
- 
+    width: 500px;
 }
+
 .contact_form label {
-
-height:26px;
- font-family: 'firasans-book', arial, sans-serif;
- font-size: 1.05em;
-color: #959aa8;
-display:inline-block;
-vertical-align:top;
-*display:inline;
-
+    height: 26px;
+    font-family: 'firasans-book', arial, sans-serif;
+    font-size: 1.05em;
+    color: #959aa8;
+    display: block;
+    vertical-align: top;
 }
-.contact_form input {
-	display: inline-block;
-  margin-bottom: 10px;
-  padding: 0 3px;
-   width: 184px;
-  height: 39px;
-   font-family: 'firasans-book', arial, sans-serif;
- font-size: 0.9em;
- color: #48cbe8;
-  border: 1px solid #48cbe8;
-  border-radius: 2px;
-  line-height: 25px;
+
+.input_name,
+.input_mail {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0 9px;
+    width: 173px;
+    height: 39px;
+    font-family: 'firasans-book', arial, sans-serif;
+    font-size: 0.9em;
+    color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 2px;
+    vertical-align: top;
 }
 
 .contact_form input[type=submit] {
- 
-   display: inline-block;
-  color: #fff;
-  width: 150px;
-  background-color: #48cbe8;
-  border-bottom: 2px solid #3ba8c0;
-  font-size: 1.3em;
-  position: relative;
-  cursor: pointer;
-  
+    display: inline-block;
+    color: #fff;
+    width: 150px;
+    font-size: 1.3em;
+    position: relative;
+    cursor: pointer;
 }
-.contact_form input[type=textarea]{
-	padding-right: 20px;
-    cols: 40;
-    rows: 20;
-	height: 180px;
-	  width: 377px;
+
+.contact_form input[type=submit]:hover {
+    border-bottom: 0px solid #3ba8c0;
+}
+
+textarea {
+    display: inline-block;
+    font-family: 'firasans-book', arial, sans-serif;
+    font-size: 0.9em;
+    color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 2px;
+    padding-top: 10px;
+    width: 402px;
+    height: 177px;
 }
 
 .submit_buttons {
-	margin: 20px auto;
-	text-align: center;
+    margin: 20px auto;
+    text-align: center;
 }
-::-webkit-input-placeholder {color:#48cbe8;}
-::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
-:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#48cbe8;}
+/* кроссбраузерность плейсхолдеров*/
 
-.contact_form input[type=submit]:hover {
-   color:#ccc;
+::-webkit-input-placeholder {
+    color: #48cbe8;
 }
 
+::-moz-placeholder {
+    color: #48cbe8;
+}
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #48cbe8;
+}
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #48cbe8;
+}
+
+.contact_form input[type=submit]:hover {}
+/* индивидуальное для кнопок*/
 .btn_left {
-	float: left;
+    float: left;
+    background-color: #48cbe8;
+    border-bottom: 2px solid #3ba8c0;
 }
+
 .btn_right {
-	float: right;
- }
+    float: right;
+    background-color: #849db5;
+    border-bottom: 2px solid #687b8f;
+}
