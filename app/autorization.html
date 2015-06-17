@@ -18,8 +18,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/autorization.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.css">
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+   
+    <script src="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -32,14 +36,14 @@
             <h4 class="titles_style autoriz_name">Авторизируйтесь</h4>
             <div class="auto_form">
                 <!-- AUTORIZATION FORM-->
-                <form method="post" action="#">
+                <form class="form_autorized" method="post" action="#">
                     <div class="auto_login">
-                        <label>Логин</label>
-                        <input type="text" name="login" placeholder="Введите логин" />
+                        <label class="label_names">Логин</label>
+                        <input class="input_auto_text" type="text" name="login" placeholder="Введите логин" />
                     </div>
                     <div class="auto_pass">
-                        <label >Пароль</label>
-                        <input name="picture_progect" type="password" placeholder="Введите пароль" />
+                        <label class="label_names" >Пароль</label>
+                        <input class="input_auto_text" name="picture_progect" type="password" placeholder="Введите пароль" />
                     </div>
                     <input class="buttons" type="submit" value="войти" />
                 </form>
@@ -49,14 +53,14 @@
         <!-- AUTORIZATION block END-->
     </div>
     <!--  FOOTER -->
-    <div class="footer_img_wrap">
-        <a class="lock_image" href="autorization.html"><span class="link_auto">A</span></a>
-    </div>
-    <footer class="page_footer">
-        <div class="footer_content cf">
-            <p class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</p>
-        </div>
-    </footer>
+ 
+      <footer class="page_footer"> 
+         <div class="footer_container cf">
+            <div class="lock_image"><a href="autorization.html" class="lock_link"></a> </div>
+            <div class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</div>
+             
+         </div>
+      </footer>
     <!--  FOOTER END -->
     <script type="text/javascript">
     document.getElementById('menu_active').onclick = function() {

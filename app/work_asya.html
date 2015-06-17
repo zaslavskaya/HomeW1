@@ -18,9 +18,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/my_work.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="bower/placeholders/lib/placeholders.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -42,12 +46,13 @@
                     <div id="menu_active">
                         <a href="#"></a>
                     </div>
-                    <ul class="social cf">
-                        <li class="vk"><a href="https://vk.com/id3310169"><span class="social_hidden">vk</span></a></li>
-                        <li class="tw"><a href="https://twitter.com/it_Z_Asya"><span class="social_hidden">tw</span></a></li>
-                        <li class="fb"><a href="https://www.facebook.com/moe.e.mail"><span class="social_hidden">fb</span></a></li>
-                        <li class="git"><a href="https://github.com/zaslavskaya"><span class="social_hidden">git</span></a></li>
-                    </ul>
+                     <ul class="social">
+                       <li class="social_pt"><a href="https://vk.com/id3310169" target="_blank" class="social_link vk"></a></li>
+                       <li class="social_pt"><a href="https://twitter.com/it_Z_Asya" target="_blank" class="social_link tw"></a></li>
+                       <li class="social_pt"><a href="https://www.facebook.com/moe.e.mail" target="_blank" class="social_link fb"></a></li>
+                       <li class="social_pt"><a href="https://github.com/zaslavskaya" target="_blank" class="social_link git"></a></li>
+                         
+                     </ul>
                 </div>
                 <!-- SOCIAL ICONS  END-->
             </div>
@@ -85,10 +90,10 @@
                                     <img src="img/example.jpg" alt="site">
                                 </div>
                                 <div class="link_name_mask">
-                                    <a href="http://wedo.holiday/"> Wedo.holiday</a>
+                                    <a href="http://wedo.holiday/" target="_blank"> Wedo.holiday</a>
                                 </div>
                             </div>
-                            <p class="example_name"><a class="examle_name_link" href="#">wedo.holiday</a></p>
+                            <p class="example_name"><a class="examle_name_link" target="_blank" href="http://wedo.holiday/">wedo.holiday</a></p>
                             <p class=" example_descript">А вот мой первый лендинг, не судите строго...</p>
                         </div>
                         <div class="Work_example">
@@ -97,11 +102,11 @@
                                     <img src="img/example.jpg" alt="site">
                                 </div>
                                 <div class="link_name_mask">
-                                    <a href="http://wedo.holiday/"> Wedo.holiday</a>
+                                    <a href="http://wedo.holiday/" target="_blank"> Wedo.holiday</a>
                                 </div>
                             </div>
-                            <p class="example_name"><a class="examle_name_link" href="#">wedo.holiday</a></p>
-                            <p class=" example_descript">А вот мой первый лендинг, не судите строго...</p>
+                            <p class="example_name"><a class="examle_name_link" target="_blank" href="http://wedo.holiday/">wedo.holiday</a></p>
+                            <p class=" example_descript">А вот мой первый лендинг, не судите строго...!</p>
                         </div>
                         <div class="Work_example">
                             <div class="example_wrapper">
@@ -109,11 +114,11 @@
                                     <img src="img/example.jpg" alt="site">
                                 </div>
                                 <div class="link_name_mask">
-                                    <a href="http://wedo.holiday/"> Wedo.holiday</a>
+                                    <a href="http://wedo.holiday/" target="_blank"> Wedo.holiday</a>
                                 </div>
                             </div>
-                            <p class="example_name"><a class="examle_name_link" href="#">wedo.holiday</a></p>
-                            <p class=" example_descript">А вот мой первый лендинг, не судите строго...</p>
+                            <p class="example_name"><a class="examle_name_link" target="_blank" href="http://wedo.holiday/">wedo.holiday</a></p>
+                            <p class=" example_descript">А вот мой первый лендинг, не судите строго... </p>
                         </div>
                        
                         <div class="Work_example">
@@ -122,41 +127,49 @@
                                     <img src="img/example.jpg" alt="site">
                                 </div>
                                 <div class="link_name_mask">
-                                    <a href="http://wedo.holiday/"> Wedo.holiday</a>
+                                    <a href="http://wedo.holiday/" target="_blank"> Wedo.holiday</a>
                                 </div>
                             </div>
-                            <p class="example_name"><a class="examle_name_link" href="#">wedo.holiday</a></p>
-                            <p class=" example_descript">А вот мой первый лендинг, не судите строго...</p>
+                            <p class="example_name"><a class="examle_name_link" target="_blank" href="http://wedo.holiday/">wedo.holiday</a></p>
+                            <p class=" example_descript">А вот мой первый лендинг, не судите строго... </p>
                         </div>
                         <a href="#" class="add">
                             <div class="Work_example">
                                 <div class="example_add_wrapper add_new_work">
                                     <div class="add_content">
 
-                                      <div class="link_group " rel="reg_form" href="index.html" >
-                                            <a class="show_popup show_popup_link " rel="reg_form" href="#">
-                                        Добавить проект</a>
-    
-                                       </div>
+                                      <a class="show_popup" rel="reg_form" href="#"><div class="link_group show_popup_link " rel="reg_form" href="index.html" >
+                                          
+                                        Добавить проект
+                                         </div></a>
                                                  <div class="popup reg_form">
                                                     <a class="close" href="#">Close</a>
-                                                    <h4 class="titles_style">Добавление проекта</h4>
+                                                    <h4 class="titles_style popup_title">Добавление проекта</h4>
 
-                                                    <form method="post" action="">
+                                                    <form class="forms" method="post" action="">
 
-                                                        <label for="name_project">Навзвание проекта</label>
-                                                        <input type="text" name="name_project" placeholder="Введите название" />
+                                                        <label  class="label_decor" for="name_project">Навзвание проекта</label>
+                                                        <input class="text_input" type="text" name="name_project" placeholder="Введите название" />
 
-                                                        <label for="picture_progect">Картинка проекта:</label>
-                                                        <input  name="picture_progect" type="file" placeholder="загрузите изображение"/>
+                                                        <div class="file_uploud"> 
+                                                             <label  class="label_decor" for="picture_progect">Картинка проекта:</label>
+                                                             <div class="fileform">
+                                                                <div id="fileformlabel">Загрузите изображение</div>
+                                                                <div class="selectbutton"></div>
+                                                                <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+                                                                </div>
+                                                         </div>
+ 
+                                                     
+                                                        
+                                                        <label  class="label_decor" for="url_progect">URL проекта</label>
 
-                                                        <label for="url_progect">URL проекта</label>
-                                                        <input  type="text" class="uploud" name="url_progec" placeholder="Добавьте ссылку" />
+                                                        <input  class="text_input" type="text" class="uploud" name="url_progec" placeholder="Добавьте ссылку" />
 
-                                                        <label for="descr_progectn">Описание</label>
-                                                        <input  type="text" name="descr_progect" placeholder="пара слов о вашем проекте" />
+                                                        <label  class="label_decor" for="descr_progectn">Описание</label>
+                                                        <input  class="textarea_input" type="textarea" name="descr_progect" placeholder="Пара слов о вашем проекте" />
 
-                                                        <input class="buttons" type="submit" value="Добавить" /> 
+                                                        <input  class="buttons input_submit" type="submit" value="Добавить" /> 
 
                                                     </form>
                                                 </div>
@@ -176,17 +189,14 @@
     </div>
       <!--  FOOTER -->
     
-            <div class="footer_img_wrap">
-                  <a class="lock_image" href="autorization.html"><span class="link_auto">A</span></a>
-
-            </div>
-
-    <footer class="page_footer">
-        <div class="footer_content cf">
-           
-            <p class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте егоj.</p>
-        </div>
-    </footer>
+       
+      <footer class="page_footer"> 
+         <div class="footer_container cf">
+            <div class="lock_image"><a href="autorization.html" class="lock_link"></a> </div>
+            <div class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</div>
+             
+         </div>
+      </footer>
 
     <!--  FOOTER END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -205,37 +215,23 @@
         return false;
     });
     
-    //script for tabs
-    $("div.selectTabs").each(function () {
-        var tmp = $(this);
-        $(tmp).find(".lineTabs li").each(function (i) {
-            $(tmp).find(".lineTabs li:eq("+i+") a").click(function(){
-                var tab_id=i+1;
-                $(tmp).find(".lineTabs li").removeClass("active");
-                $(this).parent().addClass("active");
-                $(tmp).find(".tab_content div").stop(false,false).hide();
-                $(tmp).find(".tab"+tab_id).stop(false,false).fadeIn(300);
-                return false;
-            });
-        });
-    });
-}); </script>
-    <script type="text/javascript">
-    document.getElementById('menu_active').onclick = function() {
-
-        var mu = document.getElementById('hidden_menu');
-
-        mu.style.display = "";
-        mu.style.display = "block";
-    };
-    </script>
-
-
+   
+});
+ </script>
+    
+<script type="text/javascript">
+    function getName (str){
+    if (str.lastIndexOf('\\')){
+        var i = str.lastIndexOf('\\')+1;
+    }
+    else{
+        var i = str.lastIndexOf('/')+1;
+    }                       
+    var filename = str.slice(i);            
+    var uploaded = document.getElementById("fileformlabel");
+    uploaded.innerHTML = filename;
+}
 </script>
-
-    <script type="text/javascript">
-
-    </script>
 
 </body>
 
