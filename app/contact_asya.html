@@ -18,18 +18,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/basic/jquery.qtip.css">
-    
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="bower/placeholders/lib/placeholders.js"></script>
-    <script type="text/javascript" src="bower/jquery-validation/dist/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    
-    
+         
 </head>
-
 <body>
     <!--[if lt IE 8]>
         <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
@@ -82,25 +75,28 @@
                 <!-- CONTACTS END -->
             </aside>
             <!-- LEFT BOX  unchange_content END-->
-            <section class="change_content" >
+            <section class="change_content">
                 <!-- MAIN INFORMATION -->
                 <article class="info_box">
                     <div class="info_box_cotact_head">
                         <h4 class="info_boxes_name contact_name titles_style">У вас интересный проект? Напишите мне!</h4></div>
                     <div class="cf info_about_wrap ">
                         <!-- Form start-->
-                        <form class="contact_form cf" action="mail.php">
-                            <div class="name_mail_left">
-                                <label class="label_name">Имя:</label>
-                                <input class="input_name" minlength="2" name="resp_name" type="name" placeholder="Как к вам обращаться" requqried />
+                        <form class="contact_form cf" action="#">
+
+                            <div class="parent_form name_mail_left left_tool">
+                                <label for="name_part" class="label_name">Имя:</label>
+                                <input id="name_part" class="input_name" name="name" type="name" placeholder="Как к вам обращаться"  />
                             </div>
-                            <div class="name_mail_right">
-                                <label class="label_name">Email:</label>
-                                <input class="input_mail" name="e-mail" type="email" placeholder="Куда мне писать" requqried />
+
+                            <div class="parent_form name_mail_right">
+                                <label for="mail_part" class="label_name">Email:</label>
+                                <input id="mail_part" class="input_mail" name="e-mail" type="email" placeholder="Куда мне писать"  />
                             </div>
-                            <div class="message_down">
-                                <label class="label_name">Cообщение:</label>
-                                <input class="input_textarea" type="textarea" placeholder="Введите ваше сообщение" requqried />
+
+                            <div class="parent_form message_down">
+                                <label for="message_part" class="label_name">Cообщение:</label>
+                                <input id="message_part" class="input_textarea" type="textarea" name="message" placeholder="Введите ваше сообщение" />
                                
                             </div>
 
@@ -113,8 +109,8 @@
                                   </div>
 
                             <div class="submit_buttons cf">
-                                <input class="buttons btn_left" type="submit" value="Отправить" />
-                                <input class="buttons btn_right" type="submit" value="Очистить" />
+                                <input class="buttons btn_left" type="submit" name="submitt" value="Отправить" /> 
+                                <input class="buttons btn_right" type="submit"  value="Очистить" />
                             </div>  
 
                         </form> 
@@ -122,28 +118,7 @@
 
                         </div>
 
-                        <div class="popup" id="success">
-            <div class="popup__overlay"></div>
-            <div class="popup__content">
-                <div class="popup__content-inner">
-                    Ваша заявка отправлена
-                </div>
-                <a class="popup__close" href="#"></a>
-            </div>
-        </div>
-
-        <div class="popup" id="error">
-            <div class="popup__overlay"></div>
-            <div class="popup__content">
-                <div class="popup__content-inner">
-                   <span class="error">
-                       что то пошло не так, повторите попозже
-                   </span>
-                </div>
-                <a class="popup__close" href="#"></a>
-            </div>
-        </div>
-
+        
 
                         </article>
                         <!-- Form end->
@@ -164,18 +139,12 @@
          </div>
       </footer>
         <!--  FOOTER END -->
-        <script type="text/javascript">
-        document.getElementById('menu_active').onclick = function() {
-
-            var mu = document.getElementById('hidden_menu');
-
-            mu.style.display = "";
-            mu.style.display = "block";
-        };
-        </script>
-        <script >
-         $("#commentForm").validate();
-        </script>
+       
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+    <script  type="text/javascript" src="js/main.js"></script>
+    <script  type="text/javascript" src="js/tooltip.js"></script>
+     
 </body>
 
 </html>
