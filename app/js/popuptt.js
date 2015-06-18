@@ -43,7 +43,7 @@
                     formGroup.addClass('has-error').removeClass('has-success');
                     input.tooltip({
                         trigger: 'manual',
-                        placement: 'right',
+                        placement: 'bottom',
                         title: textError
                     }).tooltip('show');
                     valid = false
@@ -59,7 +59,6 @@
         removeError: function() {
             $(this).tooltip('destroy').parents('.parent_form').removeClass('has-error');
         }
-
 
 
     }

@@ -10,7 +10,6 @@
 
 .autoriz_name {
     height: 67px;
-   
     background: #48cbe8;
     border-bottom: 15px #67dffa solid;
     font-family: 'firasans-light', arial, sans-serif;
@@ -20,6 +19,7 @@
     padding: 17px 10px 10px 10px;
 }
 /*Настройки формы*/
+
 .auto_form {
     background: #eff3f7;
 }
@@ -28,9 +28,9 @@
     margin-top: -32px;
     padding: 0px 83px;
     text-align: center;
-
 }
 /*лейблы*/
+
 .auto_form .label_names {
     display: inline-block;
     font-family: 'firasans-light', arial, sans-serif;
@@ -40,6 +40,7 @@
     vertical-align: top;
 }
 /* поля ввода*/
+
 .auto_form .input_auto_text {
     display: block;
     margin-bottom: 17px;
@@ -52,9 +53,9 @@
     border: 1px solid #48cbe8;
     border-radius: 2px;
     line-height: 25px;
-   
 }
 /*кнопка*/
+
 .auto_form .buttons {
     background-color: #48cbe8;
     border-bottom: 2px solid #3ba8c0;
@@ -65,11 +66,12 @@
     margin: 17px;
     padding: 0px 65px 0px 65px;
 }
-.auto_form .buttons:hover {
-	border-bottom: 0px solid #3ba8c0;
-}
 
+.auto_form .buttons:hover {
+    border-bottom: 0px solid #3ba8c0;
+}
 /* плейсхолдеры*/
+
 ::-webkit-input-placeholder {
     color: #48cbe8;
 }
@@ -87,5 +89,146 @@
 :-ms-input-placeholder {
     color: #48cbe8;
 }
+/* --------- tooltip --------- */
 
+.tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-family: 'firasans-book', arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    line-break: auto;
+}
 
+.tooltip.in {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+
+.tooltip.top {
+    padding: 5px 0;
+    margin-top: -3px;
+}
+
+.tooltip.right {
+    padding: 0 5px;
+    margin-left: 3px;
+}
+
+.tooltip.bottom {
+    padding: 5px 0;
+    margin-top: 3px;
+}
+
+.tooltip.left {
+    padding: 0 5px;
+    margin-left: -3px;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #f97e76;
+    border-radius: 4px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #f97e76;
+}
+
+.tooltip.top-left .tooltip-arrow {
+    right: 5px;
+    bottom: 0;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #f97e76;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #f97e76;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #f97e76;
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #f97e76;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #f97e76;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #f97e76;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #f97e76;
+}
+
+.has-error > .input_auto_text {
+    background-color: #fdd5d2;
+}
+
+.has-error > .input_mail {
+    background-color: #fdd5d2;
+}
+
+.has-error > .input_textarea {
+    background-color: #fdd5d2;
+}

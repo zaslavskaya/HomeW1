@@ -18,13 +18,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/my_work.css">
-    <link rel="stylesheet" type="text/css" href="css/screen.css">
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="bower/placeholders/lib/placeholders.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-
 </head>
 
 <body>
@@ -46,13 +43,20 @@
                     <div id="menu_active">
                         <a href="#"></a>
                     </div>
-                     <ul class="social">
-                       <li class="social_pt"><a href="https://vk.com/id3310169" target="_blank" class="social_link vk"></a></li>
-                       <li class="social_pt"><a href="https://twitter.com/it_Z_Asya" target="_blank" class="social_link tw"></a></li>
-                       <li class="social_pt"><a href="https://www.facebook.com/moe.e.mail" target="_blank" class="social_link fb"></a></li>
-                       <li class="social_pt"><a href="https://github.com/zaslavskaya" target="_blank" class="social_link git"></a></li>
-                         
-                     </ul>
+                    <ul class="social">
+                        <li class="social_pt">
+                            <a href="https://vk.com/id3310169" target="_blank" class="social_link vk"></a>
+                        </li>
+                        <li class="social_pt">
+                            <a href="https://twitter.com/it_Z_Asya" target="_blank" class="social_link tw"></a>
+                        </li>
+                        <li class="social_pt">
+                            <a href="https://www.facebook.com/moe.e.mail" target="_blank" class="social_link fb"></a>
+                        </li>
+                        <li class="social_pt">
+                            <a href="https://github.com/zaslavskaya" target="_blank" class="social_link git"></a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- SOCIAL ICONS  END-->
             </div>
@@ -120,7 +124,6 @@
                             <p class="example_name"><a class="examle_name_link" target="_blank" href="http://wedo.holiday/">wedo.holiday</a></p>
                             <p class=" example_descript">А вот мой первый лендинг, не судите строго... </p>
                         </div>
-                       
                         <div class="Work_example">
                             <div class="example_wrapper">
                                 <div class="example_image">
@@ -137,43 +140,38 @@
                             <div class="Work_example">
                                 <div class="example_add_wrapper add_new_work">
                                     <div class="add_content">
-
-                                      <a class="show_popup" rel="reg_form" href="#"><div class="link_group show_popup_link " rel="reg_form" href="index.html" >
-                                          
-                                        Добавить проект
-                                         </div></a>
-                                                 <div class="popup reg_form">
-                                                    <a class="close" href="#">Close</a>
-                                                    <h4 class="titles_style popup_title">Добавление проекта</h4>
-
-                                                    <form class="forms" method="post" action="">
-
-                                                        <label  class="label_decor" for="name_project">Навзвание проекта</label>
-                                                        <input class="text_input" type="text" name="name_project" placeholder="Введите название" />
-
-                                                        <div class="file_uploud"> 
-                                                             <label  class="label_decor" for="picture_progect">Картинка проекта:</label>
-                                                             <div class="fileform">
-                                                                <div id="fileformlabel">Загрузите изображение</div>
-                                                                <div class="selectbutton"></div>
-                                                                <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
-                                                                </div>
-                                                         </div>
- 
-                                                     
-                                                        
-                                                        <label  class="label_decor" for="url_progect">URL проекта</label>
-
-                                                        <input  class="text_input" type="text" class="uploud" name="url_progec" placeholder="Добавьте ссылку" />
-
-                                                        <label  class="label_decor" for="descr_progectn">Описание</label>
-                                                        <input  class="textarea_input" type="textarea" name="descr_progect" placeholder="Пара слов о вашем проекте" />
-
-                                                        <input  class="buttons input_submit" type="submit" value="Добавить" /> 
-
-                                                    </form>
+                                        <a class="show_popup" rel="reg_form" href="#">
+                                            <div class="link_group show_popup_link " rel="reg_form" href="index.html">
+                                                Добавить проект
+                                            </div>
+                                        </a>
+                                        <div class="popup reg_form">
+                                            <a class="close" href="#">Close</a>
+                                            <h4 class="titles_style popup_title">Добавление проекта</h4>
+                                            <form class="forms" method="post" action="#">
+                                                <div class="parent_form">
+                                                    <label class="label_decor" for="name_project">Навзвание проекта</label>
+                                                    <input class="text_input" type="text" name="name_project" placeholder="Введите название" />
                                                 </div>
-
+                                                <div class="file_uploud parent_form">
+                                                    <label class="label_decor" for="picture_progect">Картинка проекта:</label>
+                                                    <div class="fileform">
+                                                        <div id="fileformlabel">Загрузите изображение</div>
+                                                        <div class="selectbutton"></div>
+                                                        <input type="file" class="loud_file" name="upload" id="upload" onchange="getName(this.value);" />
+                                                    </div>
+                                                </div>
+                                                <div class="parent_form">
+                                                    <label class="label_decor" for="url_progect">URL проекта</label>
+                                                    <input class="text_input" type="text" class="uploud" name="url_progec" placeholder="Добавьте ссылку" />
+                                                </div>
+                                                <div class="parent_form">
+                                                    <label class="label_decor" for="descr_progectn">Описание</label>
+                                                    <input class="textarea_input" type="textarea" name="descr_progect" placeholder="Пара слов о вашем проекте" />
+                                                </div>
+                                                <input class="buttons input_submit" type="submit" value="Добавить" />
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="example_name"><a class="examle_name_link" href="#"><span class="hidden_text">site.ruru</span></a></p>
@@ -187,52 +185,51 @@
         </section>
         <!-- CONTENT all_content END-->
     </div>
-      <!--  FOOTER -->
-    
-       
-      <footer class="page_footer"> 
-         <div class="footer_container cf">
-            <div class="lock_image"><a href="autorization.html" class="lock_link"></a> </div>
+    <!--  FOOTER -->
+    <footer class="page_footer">
+        <div class="footer_container cf">
+            <div class="lock_image">
+                <a href="autorization.html" class="lock_link"></a>
+            </div>
             <div class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</div>
-             
-         </div>
-      </footer>
-
+        </div>
+    </footer>
     <!--  FOOTER END -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- <script type="text/javascript">
- $(function () {
-    //script for popups
-    $('a.show_popup').click(function () {
-        $('div.'+$(this).attr("rel")).slideToggle("slow");
-        $("body").append("<div id='overlay'></div>");
-        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-        return false;               
-    }); 
-    $('a.close').click(function () {
-        $(this).parent().slideToggle("slow");
-        $('#overlay').remove('#overlay');
-        return false;
-    });
-    
-   
-});
- </script>
-    
-<script type="text/javascript">
-    function getName (str){
-    if (str.lastIndexOf('\\')){
-        var i = str.lastIndexOf('\\')+1;
-    }
-    else{
-        var i = str.lastIndexOf('/')+1;
-    }                       
-    var filename = str.slice(i);            
-    var uploaded = document.getElementById("fileformlabel");
-    uploaded.innerHTML = filename;
-}
-</script>
+    <script type="text/javascript">
+    $(function() {
+        //script for popups
+        $('a.show_popup').click(function() {
+            $('div.' + $(this).attr("rel")).slideToggle("slow");
+            $("body").append("<div id='overlay'></div>");
+            $('#overlay').show().css({
+                'filter': 'alpha(opacity=80)'
+            });
+            return false;
+        });
+        $('a.close').click(function() {
+            $(this).parent().slideToggle("slow");
+            $('#overlay').remove('#overlay');
+            return false;
+        });
 
+
+    });
+    </script>
+    <script type="text/javascript">
+    function getName(str) {
+        if (str.lastIndexOf('\\')) {
+            var i = str.lastIndexOf('\\') + 1;
+        } else {
+            var i = str.lastIndexOf('/') + 1;
+        }
+        var filename = str.slice(i);
+        var uploaded = document.getElementById("fileformlabel");
+        uploaded.innerHTML = filename;
+    }
+    </script>
+    <script type="text/javascript" src="js/popuptt.js"></script>
+    <script type="text/javascript" src="js/tooltip.js"></script>
 </body>
 
 </html>
