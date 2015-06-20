@@ -48,12 +48,12 @@
     font-family: 'firasans-book', arial, sans-serif;
     font-size: 1.05em;
     color: #959aa8;
-    display: block;
+    display: inline-block;
     vertical-align: top;
 }
-
 .input_name,
-.input_mail {
+.input_mail ,
+.input_textarea {
     display: inline-block;
     margin-bottom: 10px;
     padding: 0 9px;
@@ -65,6 +65,8 @@
     border: 1px solid #48cbe8;
     border-radius: 2px;
     vertical-align: top;
+    text-align: left;
+
 }
 
 .contact_form .buttons {
@@ -75,45 +77,47 @@
     position: relative;
     cursor: pointer;
 }
-
-.contact_form .buttons:hover {
+/*.contact_form .buttons:hover {
     border-bottom: 0px solid #3ba8c0;
-}
-
+}*/
 .input_textarea {
-    display: inline-block;
-    font-family: 'firasans-book', arial, sans-serif;
-    font-size: 0.9em;
-    color: #48cbe8;
-    border: 1px solid #48cbe8;
-    border-radius: 2px;
-    padding-top: 10px;
-    width: 402px;
-    height: 177px;
+      display: inline-block;
+  font-size: 0.9em;
+  color: #48cbe8;
+  border: 1px solid #48cbe8;
+  border-radius: 2px;
+  padding-top: 10px;
+  width: 386px;
+  height: 177px;
 }
 
 .submit_buttons {
     margin: 20px auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 /* кроссбраузерность плейсхолдеров*/
 
 ::-webkit-input-placeholder {
     color: #48cbe8;
+
+   
 }
 
 ::-moz-placeholder {
     color: #48cbe8;
+    
 }
 /* Firefox 19+ */
 
 :-moz-placeholder {
     color: #48cbe8;
+
 }
 /* Firefox 18- */
 
 :-ms-input-placeholder {
     color: #48cbe8;
+   
 }
 /* индивидуальное для кнопок*/
 
@@ -122,12 +126,32 @@
     background-color: #48cbe8;
     border-bottom: 2px solid #3ba8c0;
 }
+.btn_left:hover {
+    border-bottom: 0px solid #48cbe8;
+    padding-top: 4px;
+}
+.btn_left:active {
+     border-top: 2px solid #3ba8c0;
+     outline: none;
+    padding-top: 4px;
+}
 
 .btn_right {
     float: right;
     background-color: #849db5;
     border-bottom: 2px solid #687b8f;
 }
+.btn_right:hover {
+    border-bottom: 2px solid #849db5;
+    padding-top: 4px;
+}
+.btn_right:active{
+    border-top: 2px solid #849db5;
+    padding-top: 4px;
+    outline: none;
+}
+
+
 
 .capcha_form {
     padding-top: 20px;

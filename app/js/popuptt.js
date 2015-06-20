@@ -13,7 +13,7 @@
 
         setUpListeners: function() {
             $('form').on('submit', app.submitForm);
-            $('form').on('keydown', 'input', app.removeError);
+            $('form').on('keydown', 'input, textarea', app.removeError);
         },
 
         submitForm: function(e) {
@@ -27,7 +27,7 @@
         },
 
         validateForm: function(form) {
-            var inputs = form.find('input'),
+            var inputs = form.find('input, textarea'),
                 valid = true;
 
             inputs.tooltip('destroy');
@@ -43,7 +43,7 @@
                     formGroup.addClass('has-error').removeClass('has-success');
                     input.tooltip({
                         trigger: 'manual',
-                        placement: 'bottom',
+                        placement: 'left',
                         title: textError
                     }).tooltip('show');
                     valid = false
@@ -59,10 +59,11 @@
         removeError: function() {
             $(this).tooltip('destroy').parents('.parent_form').removeClass('has-error');
         }
-
-
+         
+        
     }
 
+      
     app.initialize();
 
 }());

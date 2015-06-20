@@ -16,7 +16,6 @@
     <!-- CSS CSS -->
     <link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
     <!-- JS-->
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -44,15 +43,19 @@
                     <ul class="social">
                         <li class="social_pt">
                             <a href="https://vk.com/id3310169" target="_blank" class="social_link vk"></a>
+                            <span class="socio_hidden">Вк: https://vk.com/id3310169</span>
                         </li>
                         <li class="social_pt">
                             <a href="https://twitter.com/it_Z_Asya" target="_blank" class="social_link tw"></a>
+                            <span class="socio_hidden">Twitter: https://twitter.com/it_Z_Asya</span>
                         </li>
                         <li class="social_pt">
                             <a href="https://www.facebook.com/moe.e.mail" target="_blank" class="social_link fb"></a>
+                            <span class="socio_hidden">fB: https://www.facebook.com/moe.e.mail</span>
                         </li>
                         <li class="social_pt">
                             <a href="https://github.com/zaslavskaya" target="_blank" class="social_link git"></a>
+                            <span class="socio_hidden">github: https://github.com/zaslavskaya</span>
                         </li>
                     </ul>
                 </div>
@@ -65,21 +68,40 @@
             <!-- LEFT BOX unchange_content -->
             <aside class="unchange_content">
                 <!-- SITE NAVIGATION -->
-                <ul class="site_nav" id="hidden_menu">
-                    <li class="site_nav_pt site_nav_active first"><a class="nav_line" href="index.html">Обо мне</a></li>
-                    <li class="site_nav_pt"><a class="nav_line" href="work_asya.html">Мои работы</a></li>
-                    <li class="site_nav_pt"><a href="contact_asya.html">Связаться со мной</a></li>
+             <ul class="site_nav" id="hidden_menu">
+                    <li class="site_nav_pt site_nav_active first"><a class="nav_line nav_link" href="index.html">Обо мне</a></li>
+                    <li class="site_nav_pt"><a class="nav_line nav_link" href="work_asya.html">Мои работы</a></li>
+                    <li class="site_nav_pt"><a class=" nav_link" href="contact_asya.html">Связаться со мной</a></li>
                 </ul>
                 <!-- SITE NAVIGATION  END-->
                 <!-- CONTACTS -->
                 <div class="contacts">
-                    <div class="name"><span>Контакты</span></div>
-                    <div class="mail"><a href="#"><span>zaslavskayasya@gmail.com</span></a></div>
-                    <div class="phone"><a href="#"><span>+380637838161</span></a></div>
-                    <div class="skype"><a href="#"><span>z-asya</span></a></div>
-                </div>
-                <!-- CONTACTS END -->
-            </aside>
+                    <ul class="contacts_list">
+                        <li class="contacts_pt name">
+                            <a class="contacts_links" href="mailto:zaslavskayasya@gmail.com">
+                                <span class="contacts_links_text">Контакты</span>
+                            </a>
+                        </li>
+                        <li class="contacts_pt mail">
+                            <a class="contacts_links" href="mailto:zaslavskayasya@gmail.com">
+                                <span class="contacts_links_text">zaslavskayasya@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="contacts_pt phone">
+                            <a class="contacts_links" href="tel:+380937838161">
+                                <span class="contacts_links_text">+380937838161</span>
+                            </a>
+                        </li>
+                        <li class="contacts_pt skype">
+                            <a class="contacts_links" href="skype:z-asya">
+                                <span class="contacts_links_text">z-asya</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                  </div>
+                    <!-- CONTACTS END -->
+             </aside>
             <!-- LEFT BOX  unchange_content END-->
             <section class="change_content">
                 <!-- MAIN INFORMATION -->
@@ -144,19 +166,19 @@
             </section>
         </section>
         <!-- CONTENT all_content END-->
-    </div>
-    <!--  FOOTER -->
-    <footer class="page_footer">
-        <div class="footer_container cf">
-            <div class="lock_image">
-                <a href="autorization.html" class="lock_link"></a>
-            </div>
-            <div class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</div>
         </div>
-    </footer>
-    <!--  FOOTER END -->
-    <script type="text/javascript">
-    </script>
+        <!--  FOOTER -->
+        <footer class="page_footer">
+            <div class="footer_container cf">
+                <div class="lock_image">
+                    <a href="autorization.html" class="lock_link"></a>
+                </div>
+                <div class="footer_text">© 2015. Это мой сайт, не копируйте и не воруйте его.</div>
+            </div>
+        </footer>
+        <!--  FOOTER END -->
+        <script type="text/javascript">
+        </script>
 </body>
 
 </html>

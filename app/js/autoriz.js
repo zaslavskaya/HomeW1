@@ -1,22 +1,16 @@
 (function() {
-
     var app = {
-
         initialize: function() {
             this.modules();
             this.setUpListeners();
         },
-
         modules: function() {
-
         },
-
         setUpListeners: function() {
             $('form').on('submit', app.submitForm);
             $('form').on('keydown', 'input', app.removeError);
         },
-
-        submitForm: function(e) {
+       submitForm: function(e) {
             e.preventDefault();
 
             var form = $(this);
@@ -46,7 +40,7 @@
                         placement: 'left',
                         title: textError
                     }).tooltip('show');
-                    valid = false
+                    valid = false;
                 } else {
                     formGroup.addClass('has-success').removeClass('has-error');
                 }
@@ -61,7 +55,7 @@
         }
 
 
-    }
+    };
 
     app.initialize();
 
